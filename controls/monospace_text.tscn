@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://drydfd63quga2"]
+
+[ext_resource type="Script" path="res://controls/monospace_text.gd" id="1_knjh0"]
+
+[node name="MonospaceText" type="HBoxContainer"]
+theme_override_constants/separation = 0
+script = ExtResource("1_knjh0")
