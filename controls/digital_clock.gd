@@ -42,14 +42,12 @@ var decimals: int = 0:
 
 var format_string: String = ''
 var num_args: int = 0
-var text_len: int = 0
 
-# Update format_string, num_args, and text_len based on exported properties.
+# Update format_string and num_args based on exported properties.
 func update_format():
 	
 	# Start with "HH:MM".
 	num_args = 2
-	text_len = 5
 
 	if hour_format & 2:
 		# Pad with zero.
@@ -61,19 +59,16 @@ func update_format():
 	if show_seconds:
 		# Add ":SS".
 		num_args += 1
-		text_len += 3
 		format_string += ':%02d'
 		
 		if decimals > 0:
 			# Add ".XXX" for fraction of a second.
 			num_args += 1
-			text_len += 1 + decimals
 			format_string += '.%0' + str(decimals) + 'd'
 	
 	if hour_format & 1:
 		# Add " am" or " pm".
 		num_args += 1
-		text_len += 3
 		format_string += ' %s'
 
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://1assifm2teup"]
 
-[ext_resource type="Script" path="res://widgets/digital_clock.gd" id="1_xjfba"]
+[ext_resource type="Script" path="res://controls/digital_clock.gd" id="1_xjfba"]
 [ext_resource type="PackedScene" uid="uid://drydfd63quga2" path="res://controls/monospace_text.tscn" id="2_0mn8h"]
 
 [node name="DigitalClock" type="Control"]
